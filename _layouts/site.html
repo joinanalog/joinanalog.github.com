@@ -12,13 +12,14 @@
   <![endif]-->
   <style>
 	html,body { color: #000; background-color: #fff; margin: 0; padding: 0; font-family: Helvetica,Arial,SanSerif}
-	header { border-bottom: 1px solid black; text-indent: -9999px; background: #fff url('http://gravatar.com/avatar/8a9e0e5806d0fa2f4f759261725c37e7?s=240') 0 0 no-repeat; }
+	header { border-bottom: 1px solid black; text-indent: -9999px; background: #fff url('http://gravatar.com/avatar/8a9e0e5806d0fa2f4f759261725c37e7?s=240') 0 50% no-repeat; }
 	header, footer, section { padding: 1em; }
 	
 	.button {
-	    margin: 3em 0;
+	    margin: 0 auto;
 	    padding: 0;
 	    text-align: center;
+		width: 20em;
 	}
 	
 	.button a {
@@ -30,7 +31,8 @@
 	    background-color: #D14836;
 	    color: #FFFFFF;
 	    display: block;
-	    padding: 2px 5px;
+	    padding: 0.25em 2em;
+	    text-decoration: none;
 	}
 	.button a:hover {
 	    background-color: #C53727;
@@ -39,15 +41,13 @@
 	    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 	}
 	
-	#eyjafjallajokull { text-align: center; }
+	#eyjafjallajokull { text-align: center; background: #dedede url('http://aitor.is/images/the-shape/notebooks.jpg') 50% 50% no-repeat; height: 25em; margin: 0; }
   </style>
 </head>
 
 <body>
   {% include header.html %}
-  <section id="content">
-    {{content}}
-  </section>
+  {{content}}
   {% include footer.html %}
 </body>
 
