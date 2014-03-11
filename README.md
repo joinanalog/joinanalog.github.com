@@ -1,4 +1,3 @@
-joinanalog.github.com
-=====================
+# Analog website
 
-Initial site 
+[[http://analog.is/]]
