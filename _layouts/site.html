@@ -1,55 +1,21 @@
-{% assign base = site.baseurl %}
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Analog</title>
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-  <link rel="shortcut icon" href="{{base}}/img/favicon.ico" type="image/x-icon" />
-  <!--[if lt IE 9]>
-  <script src="{{base}}/js/html5shiv.js"></script>
-  <![endif]-->
-  <style>
-	html,body { color: #000; background-color: #fff; margin: 0; padding: 0; font-family: Helvetica,Arial,SanSerif}
-	header { border-bottom: 1px solid black; text-indent: -9999px; background: #fff url('http://gravatar.com/avatar/8a9e0e5806d0fa2f4f759261725c37e7?s=240') 0 50% no-repeat; }
-	footer { background: #fff url('http://optional.is/hiring/vatnajokull.png') 100% 50% no-repeat; color: #666; border-top: 1px solid #dedede }
-	header, footer, section { padding: 1em; }
-	p { font-size: 1em; line-height: 1.5em; padding-bottom: 1em; margin: 0;}
-	.button {
-	    margin: 0 auto;
-	    padding: 0;
-	    text-align: center;
-		width: 20em;
-	}
-	
-	.button a {
-	    border-radius: 15px 15px 15px 15px;
-	    font-size: 200%;
-	    font-weight: bold;
-	    margin: 0 auto;
-	    padding: 1em;
-	    background-color: #D14836;
-	    color: #FFFFFF;
-	    display: block;
-	    padding: 0.25em 2em;
-	    text-decoration: none;
-	}
-	.button a:hover {
-	    background-color: #C53727;
-	    background-image: -moz-linear-gradient(center top , #DD4B39, #C53727);
-	    border-color: #B0281A #B0281A #AF301F;
-	    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-	}
-	
-	#eyjafjallajokull { text-align: center; background: #dedede url('http://aitor.is/images/the-shape/notebooks.jpg') 50% 50% no-repeat; height: 25em; margin: 0; }
-  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <title>
+    {% if page.title %}{{ page.title }} &ndash; {{ site.title }}{% else %}{{ site.title }}{% endif %}
+  </title>
+  <link rel="shortcut icon" href="{{site.startup_path}}flat-ui/images/favicon.ico">
+  {% include general/included_stylesheets.html %}
 </head>
 
 <body>
-  {% include header.html %}
   {{content}}
-  {% include footer.html %}
-</body>
 
+  {% include general/included_javascripts.html %}
+  {% include general/google_analytics.html %}
+</body>
 </html>
