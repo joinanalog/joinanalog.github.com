@@ -1,0 +1,77 @@
+@startup_path: "../../lib/";
+@assets_path: "../../assets/";
+
+@import '@{startup_path}flat-ui/less/variables.less';
+@import '@{startup_path}flat-ui/less/mixins.less';
+
+@import '@{startup_path}common-files/less/mixins.less';
+@import '@{startup_path}common-files/less/common.less';
+@import '@{startup_path}common-files/less/navbar.less';
+@import '@{startup_path}common-files/less/helper.less';
+
+@import '@{startup_path}ui-kit/ui-kit-header/less/header-13.less';
+
+@import '@{startup_path}ui-kit/ui-kit-content/less/content-24.less';
+@import '@{startup_path}ui-kit/ui-kit-content/less/content-30.less';
+@import '@{startup_path}ui-kit/ui-kit-content/less/content-32.less';
+@import '@{startup_path}ui-kit/ui-kit-content/less/content-35.less';
+
+@import '@{startup_path}ui-kit/ui-kit-footer/less/footer-10.less';
+
+.latlon-islands-hero{
+  .brand img {
+    width: 100px !important;
+    height: 25px !important;
+  }
+  @media (max-width: 480px) {
+    margin: 40px auto;
+  }
+}
+
+.latlon-islands-hero-sub{
+  @media (max-width: 480px) {
+    padding-top: 120px;
+    > div > .container {
+      padding-top:0px;
+    }
+  }
+  .background {
+    background-image:url("@{assets_path}images/latlon-islands/series_main_bg.jpg");
+    .opacity(30);
+  }
+  .content {
+    margin-top: 100px !important;
+    @media (max-width: 480px) {
+      margin-top: 0px !important;
+    }
+  }
+}
+
+.latlon-islands-origin {
+  background-color: #002933;
+}
+
+.latlon-islands-intro .background .col-sm-4 > div {
+  background-color: #f1c40f;
+}
+
+
+.as_seen_on {
+  background: #f1f1f1;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  @media (max-width: 767px) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .logo {
+    height: 48px !important;
+  }
+  > .container {
+    display: table;
+    > div {
+      display: table-cell;
+      text-align: center;
+    }
+  }
+}
