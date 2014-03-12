@@ -1707,7 +1707,7 @@ section * {
   background-color: #002933;
 }
 .latlon-islands-intro .background .col-sm-4 > div {
-  background: rgb(255,236,92) url('../../assets/images/latlon-islands/yellow-background.png') 0 0 no-repeat;
+  background: rgb(255,236,92) url('../../assets/images/latlon-islands/yellow-background.png') 90% -10% no-repeat;
 }
 .as_seen_on {
   background: #f1f1f1;
@@ -1718,6 +1718,9 @@ section * {
   .as_seen_on {
     padding-top: 20px;
     padding-bottom: 20px;
+  }
+  .latlon-islands-intro .background .col-sm-4 > div {
+    background: rgb(255,236,92) url('../../assets/images/latlon-islands/yellow-background.png') 90% 40% no-repeat;
   }
 }
 .as_seen_on .logo {
