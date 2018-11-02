@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
+  {% if page.meta %}{% include meta/{{page.meta}}.html %}{% endif %}
+
   <title>
     {% if page.title %}{{ page.title }} &ndash; {{ site.title }}{% else %}{{ site.title }}{% endif %}
   </title>
