@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700|Roboto+Slab:300,400,700|Roboto:400,700,900,300);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700|Roboto+Slab:300,400,700|Roboto:100,300,400,700,900);
 .dropdown-arrow-inverse {
   border-bottom-color: #34495e !important;
   border-top-color: #34495e !important;
@@ -820,7 +820,7 @@ section * {
   }
 }
 /**
- * Header 13 stylesheet  
+ * Header 13 stylesheet
  * */
 .header-13 {
   position: absolute;
@@ -2005,4 +2005,50 @@ section * {
 }
 .header-13-sub h3 {
   font-weight: 500;
+}
+
+body.dense {
+  background-color: #FFF4F4;
+}
+
+section.dense {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+section.dense h3 {
+  font-weight: 900;
+  font-size: 60px;
+  padding-bottom: 20px;
+}
+
+section.dense p {
+  line-height: 1.4em;
+  font-weight: 100;
+  font-size: 26px;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+section.dense strong {
+  font-weight: 300;
+}
+
+section.dense span.coupon {
+  font-weight: 700;
+  font-size: 22px;
+}
+
+section.dense a {
+  font-weight: 300;
+  text-decoration: underline;
+  color: #2c3e50 !important;
+}
+
+section.dense a.btn-inverse {
+  font-weight: 700;
+  text-decoration: underline;
+  color: #fff !important;
+  text-decoration: none;
 }

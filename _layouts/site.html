@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" />
@@ -12,10 +13,11 @@
   {% include general/included_stylesheets.html %}
 </head>
 
-<body>
+<body class="{{page.body_class}}">
   {{content}}
 
   {% include general/included_javascripts.html %}
   {% include general/google_analytics.html %}
 </body>
+
 </html>
