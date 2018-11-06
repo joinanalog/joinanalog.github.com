@@ -1,5 +1,4 @@
 markdown: kramdown
-pygments: true
 title: Analog
-assets_path:  '/assets/'
-startup_path: '/lib/'
+assets_path: "/assets/"
+startup_path: "/lib/"
